@@ -1,0 +1,36 @@
+@import '../../global.mixins';
+
+.slider {
+  overflow: hidden;
+  margin-top: 1.5rem;
+  @include flex(row, space-between, nowrap);
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+
+  h1 {
+    color: whitesmoke;
+    margin-left: 120px;
+  }
+
+  &__block {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+  }
+
+  &__slides {
+    width: 95%;
+    height: auto;
+    @include flex(row, left, nowrap);
+    align-items: center;
+    overflow-x: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    z-index: 5;
+    left: 109px;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}

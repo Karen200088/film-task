@@ -1,0 +1,68 @@
+@import '../../global.vars';
+@import '../../global.mixins';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.infoBlock {
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 55px;
+  left: 109px;
+
+  &__info {
+    @include flex(row, space-between, no-wrap);
+    width: 150px;
+  }
+
+  &__category {
+    letter-spacing: 5px;
+    @include h3($titleColor);
+  }
+
+  &__year {
+    @include h3($textColor);
+  }
+
+  &__mpaRating {
+    @include h3($textColor);
+  }
+
+  &__description {
+    margin-top: 15px;
+    font-size: 15px;
+
+    @include h3($textColor);
+  }
+  &__duration {
+    @include h3($textColor);
+  }
+  &__button {
+    margin-top: 15px;
+  }
+
+  &__btn {
+    font-size: 20px;
+    width: 180px;
+    height: 60px;
+    border-radius: 35px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.8;
+      scale: 1.05;
+      transition: .5s;
+    }
+    &-play {
+      @include h3($colorForBtn);
+    }
+    &-moreInfo {
+      @include h3($textColor);
+      background: #1820c2;
+      margin-left: 10px;
+    }
+  }
+  &__video {
+    z-index: -5;
+  }
+}

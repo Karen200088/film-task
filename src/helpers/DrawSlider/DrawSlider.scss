@@ -1,0 +1,11 @@
+.drawSlider {
+  display: inline;
+  height: 250px;
+  min-width: 200px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.drawSlider img{
+  object-fit: cover;
+}

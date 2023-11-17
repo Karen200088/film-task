@@ -1,0 +1,11 @@
+@mixin h3($mainColor) {
+  color: $mainColor;
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin flex($flexDirection, $justifyContent, $wrap: no-wrap) {
+  display: flex;
+  flex-direction: $flexDirection;
+  flex-wrap: $wrap;
+  justify-content: $justifyContent;
+}
